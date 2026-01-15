@@ -1,0 +1,126 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f6f8;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #1e4b7a;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+/* ===== Navigation ===== */
+.main-nav {
+    background-color: #2d2d2d;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.6rem 0;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+
+}
+
+/* ===== Main Layout ===== */
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+h1 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ===== Cards ===== */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.card h2 {
+    background-color: #1e4b7a;
+    color: #fff;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 1rem 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ===== About Layout ===== */
+.about-layout {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about-layout img {
+    width: 120px;
+    border-radius: 4px;
+}
+
+/* ===== Location Layout ===== */
+.location-layout {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.location-layout img {
+    width: 90px;
+    border: 1px solid #ccc;
+}
+
+/* ===== Web Resources ===== */
+.web-resources ul {
+    padding: 1rem 1.5rem;
+}
+
+.web-resources li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1e4b7a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
