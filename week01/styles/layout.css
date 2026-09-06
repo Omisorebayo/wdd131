@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* Holy Grail Layout using CSS Grid */
+    display: grid;
+    grid-template:
+        "header header" auto
+        "main aside" 1fr
+        "footer footer" auto
+        / 3fr 1fr;
+
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    padding: 20px;
+    height: 100px;
+    font-size: 1.2rem;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    grid-area: main;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+
+/* ASIDE */
+
+aside {
+    grid-area: aside;
+    background-color: #eee;
+    padding: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    min-height: 170px;
+}
