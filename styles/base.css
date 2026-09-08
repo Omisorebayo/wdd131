@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #1f4d6d;
+    color: white;
+}
+
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    background-color: #222;
+}
+
+
+nav a {
+    flex: 1;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.65rem;
+    font-size: 1rem;
+}
+
+
+nav a:hover {
+    background-color: #f4c542;
+    color: #222;
+}
+
+
+/* Main */
+
+main {
+    max-width: 970px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+}
+
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+/* Cards */
+
+.card {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.card h2 {
+    background-color: #1f4d6d;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+
+/* Profile Image */
+
+.card:first-of-type>img:first-of-type {
+    float: right;
+    width: 123px;
+    height: 166px;
+    object-fit: cover;
+    margin: 1rem 2rem 0.5rem 1rem;
+}
+
+
+/* First Paragraph */
+
+.card:first-of-type>p:first-of-type {
+    margin: 1.5rem 1rem;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+
+/* Location Heading */
+
+.card h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 2px solid #1f4d6d;
+    width: 70%;
+    margin: 1rem auto;
+    padding-bottom: 0.5rem;
+}
+
+
+/* Paragraphs */
+
+.card p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Flag Figure */
+
+.card figure {
+    float: left;
+    width: 150px;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+.card figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+
+/* Resources */
+
+.card ul {
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+
+.card ul a {
+    color: #003d99;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1f4d6d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+#lastModified {
+    color: #f4c542;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
