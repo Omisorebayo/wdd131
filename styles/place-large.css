@@ -1,0 +1,176 @@
+
+
+@media (min-width: 768px) {
+
+
+    /* HEADER */
+
+    header {
+        height: 130px;
+        min-height: 130px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        position: relative;
+
+        width: 100%;
+        max-width: var(--max-width);
+
+        margin: 0 auto;
+    }
+
+    .hero picture {
+        width: 100%;
+    }
+
+    .hero picture img {
+        width: 100%;
+        height: 600px;
+
+        object-fit: cover;
+    }
+
+
+    /* DATA CARD */
+
+    .data {
+        position: absolute;
+
+        top: 40px;
+        left: 20px;
+
+        width: 320px;
+
+        padding: 0 0 1.5rem;
+
+        background-color: rgba(255, 255, 255, 0.90);
+
+        border: none;
+
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+        z-index: 2;
+    }
+
+    .data h2 {
+        margin: 10px 10px 1.5rem;
+
+        padding: 1rem; 
+
+        background-color: var(--primary-color);
+
+        color: var(--secondary-color);
+
+        text-align: left;
+
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .data-list {
+        max-width: 290px;
+    }
+
+    .data-list p {
+        margin: 0.55rem 0;
+
+        font-size: 1rem;
+    }
+
+
+    /* WEATHER CARD */
+
+    .weather {
+        position: absolute;
+
+        right: 20px;
+        bottom: 40px;
+
+        width: 320px;
+
+        padding: 0 0 1.5rem;
+
+        background-color: rgba(255, 255, 255, 0.90);
+
+        border: none;
+
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+        z-index: 2;
+    }
+
+
+    /* WEATHER HEADING */
+
+    .weather h2 {
+        margin: 10px 10px 1.5rem;
+
+        padding: 1rem;
+
+        background-color: var(--primary-color);
+
+        color: var(--secondary-color);
+
+        text-align: left;
+
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+
+    /* WEATHER PSEUDO-ELEMENT */
+
+    .weather h2::after {
+        content: " ☀️";
+
+        display: inline-block;
+
+        margin-left: 1rem;
+
+        font-size: 1.5rem;
+    }
+
+
+    /* HIDE MOBILE WEATHER IMAGE */
+
+    .weather-icon {
+        display: none;
+    }
+
+
+    /* WEATHER INFORMATION */
+
+    .weather-list {
+        max-width: 290px;
+    }
+
+    .weather-list p {
+        margin: 0.65rem 0;
+
+        font-size: 1rem;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        min-height: 140px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        padding: 1.5rem;
+    }
+}

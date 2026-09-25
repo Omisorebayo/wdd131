@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about Nigeria, including its geography, population, capital, language, currency, and weather.">
+
+    <meta name="author" content="Omisore Kazeem Bayo">
+
+    <title>Nigeria - Place</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <!-- Responsive hero image -->
+            <picture>
+                <source srcset="images/lekki-and-ajah-bridge.webp" media="(min-width: 1000px)">
+                <source srcset="images/lekki-and-ajah-bridge-medium.webp" media="(min-width: 550px)">
+                <img src="images/lekki-and-ajah-bridge-small.webp" alt="Lekki and Ajah Bridge in Lagos, Nigeria" width="400" height="200">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+
+                <div class="data-list">
+                    <p>
+                        <span>Area:</span>
+                        <span>923,768 km²</span>
+                    </p>
+
+                    <p>
+                        <span>Population:</span>
+                        <span>Over 200 million</span>
+                    </p>
+
+                    <p>
+                        <span>Capital:</span>
+                        <span>Abuja</span>
+                    </p>
+
+                    <p>
+                        <span>Language:</span>
+                        <span>English</span>
+                    </p>
+
+                    <p>
+                        <span>Currency:</span>
+                        <span>Naira (₦)</span>
+                    </p>
+
+                    <p>
+                        <span>Continent:</span>
+                        <span>Africa</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <div class="weather-icon"><img src="images/weather_icon.svg"
+                        alt="picture of sun and cloud" width="50" height="50"></div>
+
+                <div class="weather-list">
+
+                    <p>
+                        <span>Temperature:</span>
+                        <span id="temperature">28 °C</span>
+                    </p>
+
+                    <p>
+                        <span>Wind Speed:</span>
+                        <span id="wind-speed">12 km/h</span>
+                    </p>
+
+                    <p>
+                        <span>Wind Chill:</span>
+                        <span id="wind-chill">N/A</span>
+                    </p>
+
+                    <p>
+                        <span>Conditions:</span>
+                        <span>Sunny</span>
+                    </p>
+
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            Omisore kazeem Bayo - Nigeria
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="last-modified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
