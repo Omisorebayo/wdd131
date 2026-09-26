@@ -60,7 +60,8 @@
     }
 
     .data h2 {
-        margin: 10px 10px 1.5rem;
+        margin: 10px 10px;
+        margin-left: -0.5rem;
 
         padding: 1rem; 
 
@@ -110,7 +111,8 @@
     /* WEATHER HEADING */
 
     .weather h2 {
-        margin: 10px 10px 1.5rem;
+        margin: 10px 10px;
+        margin-left: -0.5rem;
 
         padding: 1rem;
 
