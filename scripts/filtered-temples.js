@@ -142,13 +142,13 @@ function displayTemples(templeList) {
         name.textContent = temple.templeName;
 
         const location = document.createElement("p");
-        location.textContent = `Location: ${temple.location}`;
+        location.innerHTML = `<span>Location:</span> ${temple.location}`;
 
         const dedicated = document.createElement("p");
-        dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+        dedicated.innerHTML = `<span>Dedicated:</span> ${temple.dedicated}`;
 
         const area = document.createElement("p");
-        area.textContent = `Area: ${temple.area} sq ft`;
+        area.innerHTML = `<span>Size:</span> ${temple.area} sq ft`;
 
         const image = document.createElement("img");
         image.src = temple.imageUrl;

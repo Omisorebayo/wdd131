@@ -87,24 +87,6 @@ h1 {
     grid-column: 1 / -1;
 }
 
-/* FIGURES */
-figure {
-    margin: 0;
-    text-align: center;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-figcaption {
-    padding: 0.5rem;
-    color: #3C0A64;
-    font-size: 0.8rem;
-}
-
 /* FOOTER */
 footer {
     background-color: #3C0A64;
@@ -121,8 +103,10 @@ footer {
     text-align: center;
 }
 
+/* TEMPLE CARD */
+
 .temple-card h2 {
-    color: black;
+    color: #3C0A64;
     margin-bottom: 0.5rem;
 }
 
@@ -134,4 +118,10 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 0.75rem;
+}
+
+.temple-card p span {
+    color: #3c0a64;
+    text-transform: uppercase;
+    font-size: 0.75rem;
 }
