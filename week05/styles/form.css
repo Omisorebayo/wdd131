@@ -1,0 +1,172 @@
+:root {
+    --green: #008751;
+    --white: #ffffff;
+    --dark: #222222;
+    --light-green: #e8f5e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+}
+
+/* Main form container */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--light-green);
+}
+
+/* Form */
+.review-form {
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+/* Main labels */
+.review-form>label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Select, date, text input and textarea */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+/* Rating */
+label[for^="rating"] {
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-right: 0.1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.4rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Features */
+label[for="durability"],
+label[for="ease"],
+label[for="performance"],
+label[for="design"] {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Optional text */
+.review-form span {
+    font-weight: normal;
+    font-style: italic;
+    color: var(--green);
+}
+
+/* Review box */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dark);
+}
+
+/* perfectly aligned radio buttons underneath the star labels */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.rating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating input[type="radio"] {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 0.5rem;
+    }
+
+    .review-form {
+        padding: 1rem;
+    }
+}
