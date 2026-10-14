@@ -1,0 +1,80 @@
+/* TABLETS */
+@media screen and (min-width: 550px) {
+    .attractions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filter-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .filter-container select {
+        width: auto;
+        min-width: 230px;
+    }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 768px) {
+    .site-header {
+        flex-wrap: nowrap;
+        padding: 0.75rem 2rem;
+    }
+
+    .logo,
+    header.menu-open .logo {
+        display: flex;
+    }
+
+    .logo {
+        flex-shrink: 0;
+        font-size: 1.25rem;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+        margin-left: auto;
+    }
+
+    nav ul,
+    nav ul.open {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    nav a {
+        padding: 0.6rem 0.75rem;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding: 4rem 2rem;
+    }
+
+    .attractions-section {
+        padding: 3.5rem 2rem;
+    }
+
+    .attractions-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.75rem;
+    }
+
+    .attraction-card img {
+        height: 230px;
+    }
+
+    .place-details {
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+}

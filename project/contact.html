@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Register your tourism interests or share feedback with Explore Nigeria.">
+
+    <meta name="author" content="Kazeem Bayo Omisore">
+
+    <title>Contact Us | Explore Nigeria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="images/nigerian-attractions.svg" alt="Explore Nigeria logo" width="45" height="45">
+            <span>Explore Nigeria</span>
+        </a>
+
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="menuItems"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="menuItems" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <h1>Connect With Us</h1>
+
+        <p class="contact-intro">
+            Interested in exploring Nigeria? Register your interests
+            or share feedback to help us improve Explore Nigeria.
+        </p>
+
+        <!-- VISITOR REGISTRATION FORM -->
+        <section class="contact-form-section">
+            <h2>Visitor Registration</h2>
+
+            <p>
+                Tell us about your tourism interests and the destinations
+                you would like to discover.
+            </p>
+
+            <form id="registrationForm">
+                <label for="visitorName">Full Name</label>
+                <input type="text" id="visitorName" name="visitorName" autocomplete="name" required>
+
+                <label for="visitorEmail">Email Address</label>
+                <input type="email" id="visitorEmail" name="visitorEmail" autocomplete="email" required>
+
+
+                <label for="visitorState">State of Interest</label>
+                <select id="visitorState" name="visitorState" required>
+                    <option value="">Select a state</option>
+                </select>
+
+                
+                <fieldset>
+                    <legend>Preferred Attraction Types</legend>
+                    <div id="interestOptions"></div>
+                </fieldset>
+
+
+                <label class="choice-label consent-label">
+                    <input type="checkbox" name="updates" value="yes">
+                    I would like to receive tourism updates.
+                </label>
+
+                <button type="submit">Register</button>
+
+                <p id="registrationMessage" class="form-message" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <!-- WEBSITE FEEDBACK FORM -->
+        <section class="contact-form-section">
+            <h2>Website Feedback</h2>
+
+            <p>
+                Your feedback helps us improve the information and
+                experience we provide to visitors.
+            </p>
+
+            <form id="feedbackForm">
+                <label for="feedbackName">Name (optional)</label>
+                <input type="text" id="feedbackName" name="feedbackName" autocomplete="name">
+
+        
+                <div class="star-rating">
+                    <span class="rating-label">Rate Your Experience</span>
+                
+                    <div class="stars" role="group" aria-label="Rate your experience">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5" aria-label="5 stars">★</label>
+                
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" aria-label="4 stars">★</label>
+                
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" aria-label="3 stars">★</label>
+                
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" aria-label="2 stars">★</label>
+                
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" aria-label="1 star">★</label>
+                    </div>
+                </div>
+
+                
+
+                <label for="feedbackType">Feedback Type</label>
+                <select id="feedbackType" name="feedbackType" required>
+                    <option value="">Select a type</option>
+                </select>
+
+
+                <label for="feedbackMessage">Your Feedback</label>
+                <textarea id="feedbackMessage" name="feedbackMessage" rows="6" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+
+                <p id="feedbackMessageStatus" class="form-message" aria-live="polite"></p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Explore Nigeria | Kazeem Bayo Omisore
+        </p>
+
+        <p>Last modified: <span id="lastModified"></span></p>
+
+        <p><a href="references.html">Image and Information References</a></p>
+        <p><a href="siteplan.html">Website Planning Document</a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore waterfalls, mountains, parks, historical landmarks, and cultural attractions across Nigeria.">
+
+    <meta name="author" content="Kazeem Bayo Omisore">
+
+    <title>Explore Nigeria | Discover Nigerian Attractions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="images/nigerian-attractions.svg" alt="Explore Nigeria logo" width="500" height="500">
+            <span>Explore Nigeria</span>
+        </a>
+
+        <button type="button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="menuItems">
+            ☰
+        </button>
+
+    <nav id="menuItems" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture class="hero-picture">
+                <source srcset="images/waterfall-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/waterfall-medium.webp" media="(min-width: 550px)">
+                <img src="images/waterfall-small.webp" alt="A beautiful waterfall in Nigeria" width="400" height="200">
+            </picture>
+
+            <div class="hero-content">
+                <h1>Discover the Beauty of Nigeria</h1>
+
+                <p>
+                    Explore breathtaking landscapes, remarkable
+                    historical landmarks, and rich cultural
+                    destinations across Nigeria.
+                </p>
+
+                <a class="explore-button" href="attractions.html">
+                    Explore Attractions
+                </a>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="attractions-section">
+            <div class="section-heading">
+                <h2>Explore Nigerian Attractions</h2>
+
+                <p>
+                    Find your next destination and discover the
+                    natural wonders and cultural treasures of Nigeria.
+                </p>
+            </div>
+
+            <div class="filter-container">
+                <label for="categoryFilter">Filter by category:</label>
+
+                <select id="categoryFilter" name="categoryFilter">
+                    <option value="all">All Attractions</option>
+                    <option value="waterfall">Waterfalls</option>
+                    <option value="mountain">Mountains</option>
+                    <option value="park">Parks and Nature</option>
+                    <option value="historical">Historical Sites</option>
+                    <option value="cultural">Cultural Attractions</option>
+                </select>
+            </div>
+
+            <p id="resultCount" class="result-count" aria-live="polite"></p>
+
+            <div id="attractionsList" class="attractions-grid">
+                <!-- Attraction cards are created by JavaScript. -->
+            </div>
+        </section>
+
+        <!-- Selected Attraction Details -->
+        <section id="placeDetails" class="place-details" aria-labelledby="detailName" hidden>
+            <button type="button" id="closeDetails" class="close-button">
+                Close Details
+            </button>
+
+            <h2 id="detailName"></h2>
+            <p id="detailLocation" class="detail-location"></p>
+            <p id="detailDescription"></p>
+        </section>
+
+        <a href="contact.html">Register or Share Feedback</a>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Explore Nigeria | Kazeem Bayo Omisore
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

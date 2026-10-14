@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore waterfalls, mountains, parks, historical landmarks, and cultural attractions across Nigeria.">
+
+    <meta name="author" content="Kazeem Bayo Omisore">
+
+    <title>Attractions | Explore Nigeria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+
+    <script src="scripts/attractions.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="images/nigerian-attractions.svg" alt="Explore Nigeria logo" width="45" height="45">
+            <span>Explore Nigeria</span>
+        </a>
+
+        <button id="menuButton" type="button" aria-label="Open navigation menu" aria-controls="menuItems"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="menuItems" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html" aria-current="page">Attractions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="attractions-section">
+            <h1>Explore Nigerian Attractions</h1>
+
+            <p>
+                Discover beautiful natural landscapes, wildlife,
+                historical landmarks, and cultural treasures across Nigeria.
+            </p>
+
+            <div class="filter-container">
+                <label for="categoryFilter">Filter by category:</label>
+
+                <select id="categoryFilter">
+                    <option value="all">All Attractions</option>
+                    <option value="waterfall">Waterfalls</option>
+                    <option value="mountain">Mountains</option>
+                    <option value="park">Parks and Nature</option>
+                    <option value="historical">Historical Sites</option>
+                    <option value="cultural">Cultural Attractions</option>
+                </select>
+            </div>
+
+            <p id="resultCount" aria-live="polite"></p>
+
+            <div id="attractionsList" class="attractions-grid"></div>
+
+            <section id="placeDetails" class="place-details" aria-labelledby="detailName" hidden>
+                <button id="closeDetails" type="button" aria-label="Close attraction details">
+                    Close
+                </button>
+
+                <h2 id="detailName"></h2>
+                <p id="detailLocation"></p>
+                <p id="detailDescription"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Explore Nigeria | Kazeem Bayo Omisore
+        </p>
+
+        <p>Last modified: <span id="lastModified"></span></p>
+
+        <p><a href="references.html">Image and Information References</a></p>
+        <p><a href="siteplan.html">Website Planning Document</a></p>
+    </footer>
+</body>
+
+</html>
